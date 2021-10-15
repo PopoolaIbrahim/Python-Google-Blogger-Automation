@@ -26,8 +26,8 @@ thisuser = users.get(userId='self').execute()
 print('This user\'s display name is: %s' % thisuser['displayName'])
 posts=service.posts()
 payload={
-        "content": ''' <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg"width="300"height="50">Make 100 Millions of Dollars with Google Api Python library<br> Download Google Python libraries on Googleapis Github''',
-        "title": "12 Million Dollars Python Developer",
+        "content": "This Blog Post is created with Python,
+        "title": "Python Blogger Automation",
         }
-respost=posts.insert(blogId='913409048670049489',body=payload,isDraft=False).execute() #updating the existing post/page
+respost=posts.insert(blogId='xxxxxxxxxxxxxxxxxx',body=payload,isDraft=False).execute() #updating the existing post/page
 respost
